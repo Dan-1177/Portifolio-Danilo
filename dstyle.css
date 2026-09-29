@@ -28,17 +28,18 @@ header{
     display: flex;
     gap: 129px;
 }
+
 .cabecalho-link{
      color: var(--corPrincipal);
      font-family: var(--fontePrincipal);
      font-size: 24px;
      font-weight: bold;
      text-decoration: none;
+
 }
 
 main{
-    height:65vh;
-    padding: 5% 25%;
+    padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -86,21 +87,9 @@ main{
     font-weight: 600;
 }
 
-#linkdin{
-    border-radius: 35px;
-
-}
 .container-foto{
-    width: 310px;
-    height: 370px;
-    object-fit: cover;
-    filter: grayscale(50%);
-    border: 7px solid var(--corPrincipal);
-    display: flex;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(32, 199, 242, 0.15);
+    width: 50%;
 }
-
 
 footer{
     color: var(--corSecundaria);
@@ -109,8 +98,10 @@ footer{
     text-align: center;
     font-family: var(--fontePrincipal);
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 400;
 }
+
+
 
 @media(max-width: 600px) {
     .cabecalho {
@@ -130,7 +121,14 @@ footer{
     }
     .container-foto {
         width: 100%;
-        align-items: center;
+        display: flex;
         justify-content: center;
+        align-items: center;
+    }
+
+    .container-foto img {
+        width: 350px;
+        max-width: 280%;
+        height: auto;
     }
 }
